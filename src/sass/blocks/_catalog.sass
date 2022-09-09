@@ -1,0 +1,149 @@
+.catalog
+    padding-bottom: 100px
+    &__tabs
+        list-style-type: none
+        display: flex
+        justify-content: center
+        margin-top: 70px
+        padding-left: 0
+        margin-bottom: 0
+    &__tab
+        width: 220px
+        height: 50px
+        margin: 0 5px
+        border: 2px solid #d0d0d0
+        line-height: 48px
+        transform: skewX(-25deg)
+        color: #6b6b6b
+        font-family: "Museo Sans Cyrl -500"
+        font-size: 18px
+        font-weight: 400
+        text-align: center
+        text-transform: uppercase
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            border: none
+            box-shadow: 3px 3px 20px $main-color
+        &_active
+            background-color: $main-color
+            color: #fff
+            border: none
+        div
+            transform: skewX(25deg)
+    &__items
+        margin-top: 75px
+        display: none
+        justify-content: center
+        flex-wrap: wrap
+        &_active
+            display: flex
+    &__item
+        width: 300px
+        min-height: 440px
+        padding: 20px 20px 26px
+        border: 2px solid #e8e8e8
+        background-color: #ffffff
+        overflow: hidden
+        margin: 0 8px
+        margin-bottom: 20px
+    &__img
+        margin: 0 auto
+        max-height: 200px
+        max-width: 140px
+        img
+            display: block
+            margin: 0 auto
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__subtitle
+        margin-top: 20px
+        color: #0d0d0d
+        font-size: 16px
+        font-weight: 700
+        text-align: center
+    &__descr
+        margin-top: 16px
+        color: #0d0d0d
+        font-size: 14px
+        font-weight: 300
+        text-align: center
+    &__info
+        display: block
+        margin-top: 17px
+        color: #c70101
+        font-size: 14px
+        font-weight: 500
+        text-align: center
+        text-decoration: underline
+        cursor: pointer
+    hr
+        margin: 20px 0
+        border-bottom: none
+    &__footer
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__preis
+        &_old
+            color: #555555
+            font-size: 14px
+            font-weight: 300
+            text-decoration: line-through
+        &_new
+            color: #050505
+            font-size: 20px
+            font-weight: 700
+    &__wrapper
+        display: flex
+        width:  calc(200% + 40px)
+        &_block
+            width: 50%
+            margin-right: 0
+            transform: translateX(-100%)
+            &_active
+                margin-right: 20px
+                transform: translateX(0) 
+        &_list
+            width: 50%
+            margin-left: 20px
+            position: relative
+            transform: translateX(0)
+            margin-bottom: 0
+            list-style-type: none
+            padding-left: 20px
+            &_active
+                transform: translateX(-100%)
+                margin-left: 0
+                padding-right: 20px
+            li
+                color: #555555
+                font-size: 14px
+                font-weight: 300
+                margin-bottom: 20px
+                width: 237px
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 5px
+                    height: 5px
+                    background-color: #c70101
+                    left: -18px
+                    top: 12%
+        &_link
+            position: absolute
+            color: #c70101
+            font-size: 14px
+            font-weight: 500
+            text-align: center
+            text-decoration: underline
+            left: calc(50% - 19px)
+            transform: translateX(-50%)
+            bottom: 0
+
+
+
+
+        
